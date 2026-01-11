@@ -22,7 +22,7 @@ const StudentGroupForm = ({ onBack }) => {
 
   try {
     await axios.post(
-      "http://localhost:5000/api/student-groups/add",
+      "https://hrms-backend-1we9.onrender.com/api/student-groups/add",
       formData
     );
 

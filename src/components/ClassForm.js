@@ -19,7 +19,7 @@ const ClassForm = ({ onBack }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/admin/class', {
+      const response = await fetch('https://hrms-backend-1we9.onrender.com/api/admin/class', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

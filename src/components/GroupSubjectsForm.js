@@ -23,7 +23,7 @@ const GroupSubjectsForm = ({ onBack }) => {
     try {
       setLoading(true);
       await axios.post(
-        "http://localhost:5000/api/group-subjects/add",
+        "https://hrms-backend-1we9.onrender.com/api/group-subjects/add",
         formData
       );
 
@@ -164,3 +164,4 @@ const GroupSubjectsForm = ({ onBack }) => {
 };
 
 export default GroupSubjectsForm;
+

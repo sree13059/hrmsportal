@@ -19,7 +19,7 @@ const EmployeeAttendanceView = ({ onBack }) => {
     try {
       setLoading(true);
       const res = await axios.get(
-        "http://localhost:5000/api/employee-attendance/view",
+        "https://hrms-backend-1we9.onrender.com/api/employee-attendance/view",
         {
           params: {
             attendanceDate: filters.attendanceDate,
@@ -62,7 +62,7 @@ const EmployeeAttendanceView = ({ onBack }) => {
       }));
 
       await axios.post(
-        "http://localhost:5000/api/employee-attendance/save",
+        "https://hrms-backend-1we9.onrender.com/api/employee-attendance/save",
         payload
       );
 
@@ -203,3 +203,4 @@ const EmployeeAttendanceView = ({ onBack }) => {
 };
 
 export default EmployeeAttendanceView;
+

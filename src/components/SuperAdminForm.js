@@ -31,7 +31,7 @@ const SuperAdminForm = ({ onBack }) => {
     return;
   }
 
-  const response = await fetch("http://localhost:5000/api/super-admin/create", {
+  const response = await fetch("https://hrms-backend-1we9.onrender.com/api/super-admin/create", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData)

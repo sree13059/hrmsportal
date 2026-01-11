@@ -17,7 +17,7 @@ const StudentAttendanceView = ({ onBack }) => {
   const fetchAttendance = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/attendance/view",
+        "https://hrms-backend-1we9.onrender.com/api/attendance/view",
         { params: filters }
       );
       setAttendanceData(res.data);
@@ -43,7 +43,7 @@ const StudentAttendanceView = ({ onBack }) => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/attendance/add", {
+      await axios.post("https://hrms-backend-1we9.onrender.com/api/attendance/add", {
         studentId: filters.id || "AUTO",
         studentName: filters.name || "Unknown",
         class: filters.class,
@@ -173,3 +173,4 @@ const StudentAttendanceView = ({ onBack }) => {
 };
 
 export default StudentAttendanceView;
+

@@ -69,7 +69,7 @@ const SubjectWiseMarksEntryForm = ({ onBack }) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/subject-wise-marks/save",
+      "https://hrms-backend-1we9.onrender.com/api/subject-wise-marks/save",
       marksData,
       {
         headers: {

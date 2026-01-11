@@ -23,7 +23,7 @@ const SectionForm = ({ onBack }) => {
     e.preventDefault();
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/api/sections/add", formData);
+      await axios.post("https://hrms-backend-1we9.onrender.com/api/sections/add", formData);
       alert("Section saved successfully!");
 
       // Reset form
@@ -185,3 +185,4 @@ const SectionForm = ({ onBack }) => {
 };
 
 export default SectionForm;
+

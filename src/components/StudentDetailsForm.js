@@ -59,7 +59,7 @@ const StudentDetailsForm = ({ onBack }) => {
     }
   });
 
-  const response = await fetch("http://localhost:5000/api/students/create", {
+  const response = await fetch("https://hrms-backend-1we9.onrender.com/api/students/create", {
     method: "POST",
     body: formDataObj
   });

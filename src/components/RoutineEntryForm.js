@@ -28,7 +28,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/routine-entry/create",
+      "https://hrms-backend-1we9.onrender.com/api/routine-entry/create",
       {
         class: formData.class,
         section: formData.section,

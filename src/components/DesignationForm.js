@@ -23,7 +23,7 @@ const DesignationForm = ({ onBack }) => {
     try {
       setLoading(true);
       await axios.post(
-        "http://localhost:5000/api/designations/add",
+        "https://hrms-backend-1we9.onrender.com/api/designations/add",
         formData
       );
 
@@ -157,3 +157,4 @@ const DesignationForm = ({ onBack }) => {
 };
 
 export default DesignationForm;
+

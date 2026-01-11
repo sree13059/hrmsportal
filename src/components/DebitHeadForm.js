@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/debit/add",
+      "https://hrms-backend-1we9.onrender.com/api/debit/add",
       debitData
     );
 

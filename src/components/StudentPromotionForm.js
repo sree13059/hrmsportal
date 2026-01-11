@@ -25,7 +25,7 @@ const handleSubmit = async (e) => {
 
   try {
     await axios.post(
-      "http://localhost:5000/api/student-promotion/create",
+      "https://hrms-backend-1we9.onrender.com/api/student-promotion/create",
       formData
     );
 

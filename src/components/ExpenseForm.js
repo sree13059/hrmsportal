@@ -39,7 +39,7 @@ const ExpenseForm = ({ onBack }) => {
   };
 
   try {
-    await axios.post("http://localhost:5000/api/expenses/add", expenseData);
+    await axios.post("https://hrms-backend-1we9.onrender.com/api/expenses/add", expenseData);
     alert("Expense submitted successfully!");
     
     // Reset

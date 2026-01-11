@@ -18,7 +18,7 @@ const ResultVerificationForm = ({ onBack }) => {
       setLoading(true);
 
       const response = await axios.get(
-        "http://localhost:5000/api/result-verification/list",
+        "https://hrms-backend-1we9.onrender.com/api/result-verification/list",
         {
           params: {
             studentId: filters.studentId,
@@ -169,3 +169,4 @@ const ResultVerificationForm = ({ onBack }) => {
 };
 
 export default ResultVerificationForm;
+

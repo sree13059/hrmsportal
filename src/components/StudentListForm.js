@@ -39,7 +39,7 @@ const StudentListForm = ({ onBack }) => {
       });
 
       await axios.post(
-        "http://localhost:5000/api/studentlist/create",
+        "https://hrms-backend-1we9.onrender.com/api/studentlist/create",
         sendData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
@@ -67,7 +67,7 @@ const StudentListForm = ({ onBack }) => {
 
   // 📥 GET STUDENTS
   const fetchStudents = async () => {
-    const res = await axios.get("http://localhost:5000/api/studentlist");
+    const res = await axios.get("https://hrms-backend-1we9.onrender.com/api/studentlist");
     setStudentList(res.data);
   };
 
@@ -129,7 +129,7 @@ const StudentListForm = ({ onBack }) => {
                   <td>
                     {s.photo && (
                       <img
-                        src={`http://localhost:5000/${s.photo}`}
+                        src={`https://hrms-backend-1we9.onrender.com/${s.photo}`}
                         width="50"
                         alt=""
                       />
@@ -148,3 +148,4 @@ const StudentListForm = ({ onBack }) => {
 };
 
 export default StudentListForm;
+

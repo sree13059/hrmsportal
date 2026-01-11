@@ -37,7 +37,7 @@ const RoutineSlotEntryForm = ({ onBack }) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/routine-slots/create",
+      "https://hrms-backend-1we9.onrender.com/api/routine-slots/create",
       slotData
     );
 

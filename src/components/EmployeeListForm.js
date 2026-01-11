@@ -33,7 +33,7 @@ const EmployeeListForm = ({ onBack }) => {
     });
 
     await axios.post(
-      "http://localhost:5000/api/employeelist",
+      "https://hrms-backend-1we9.onrender.com/api/employeelist",
       data,
       { headers: { "Content-Type": "multipart/form-data" } }
     );

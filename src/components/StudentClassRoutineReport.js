@@ -30,7 +30,7 @@ const StudentClassRoutineReport = ({ onBack }) => {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/studentclassroutine/studentclassroutine",
+        "https://hrms-backend-1we9.onrender.com/api/studentclassroutine/studentclassroutine",
         {
           params: {
             shift: selectedShift,
@@ -59,7 +59,7 @@ const StudentClassRoutineReport = ({ onBack }) => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/studentclassroutine/save-report",
+        "https://hrms-backend-1we9.onrender.com/api/studentclassroutine/save-report",
         {
           shift: selectedShift,
           className: selectedClass,
@@ -196,3 +196,4 @@ const StudentClassRoutineReport = ({ onBack }) => {
 };
 
 export default StudentClassRoutineReport;
+

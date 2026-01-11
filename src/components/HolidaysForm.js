@@ -23,7 +23,7 @@ const HolidaysForm = ({ onBack }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/admin/holiday', formData);
+      await axios.post('https://hrms-backend-1we9.onrender.com/api/admin/holiday', formData);
       alert('Holiday submitted successfully!');
       setFormData({
         holidayName: '',

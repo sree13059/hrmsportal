@@ -53,7 +53,7 @@ const StudentAdmissionForm = ({ onBack }) => {
         }
       });
 
-      await axios.post('http://localhost:5000/api/students/create', formDataToSend, {
+      await axios.post('https://hrms-backend-1we9.onrender.com/api/students/create', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
